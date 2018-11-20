@@ -1,0 +1,39 @@
+$nav-bg: #FAB94E;
+$nav-hover: #BD8F20;
+$active-tab: #f4ac04;
+
+.card {
+  display: flex;
+  flex: 0 0 100%;
+  flex-flow: column;
+  align-items: center;
+  div:first-of-type {
+    font-size: 24px;
+    color: $nav-bg;
+  }
+}
+
+article {
+  flex: 0 0 100%;
+  margin-top: 15px;
+  padding: 15px;
+  background: #F7F7F7;
+  border: 1px solid #D5D5D5;
+  border-left: 0;
+  border-right: 0;
+  a {
+    padding-left: 10px;
+  }
+  box-shadow: 0px 0px 1px 1px rgba(#F7F7F7, 0.3);
+}
+
+// Tablets
+//desktops
+@media only screen and (min-width: 900px) {
+  .home {
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+  }
+}

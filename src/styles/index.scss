@@ -1,0 +1,33 @@
+@charset "UTF-8";
+$nav-bg: #FAB94E;
+$nav-hover: #BD8F20;
+$active-tab: #f4ac04;
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: "Cabin", Arial, Geneva, sans-serif;
+  background-repeat: no-repeat;
+  background-size: auto;
+	margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Niconne', cursive;
+  font-weight: normal;
+}
+
+#root {
+  height: 100%;
+}
