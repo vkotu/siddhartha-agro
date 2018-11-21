@@ -9,10 +9,11 @@ import Components from './common';
 // when the pathname is exactly the string "/"
 const Main = () => (
   <div className="right-content">
-    <div className="header">
-      <span>Welcome to Siddarth agro!</span>
-      <span><span>email:</span> sagro1970@gmail.com</span>
-      <span><span>Phone:</span> +91-9866113691</span>
+    <div className="top-header">
+      <div className="header">
+        <span>Welcome to Siddarth agro!</span>
+        <span><span>email:</span> sagro1970@gmail.com<br/><span>Phone:</span> +91-9866113691</span>
+      </div>
     </div>
     <div className="content">
       <Switch>

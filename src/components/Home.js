@@ -18,7 +18,7 @@ class Home extends React.Component {
     return (
       <div className="home">
         <div className="carousel-container">
-          <Carousel autoPlay infiniteLoop={true} showStatus={false} centerMode={false} showThumbs={false}>
+          <Carousel autoPlay showArrows={false} infiniteLoop={true} showStatus={false} centerMode={false} showThumbs={false}>
               <div>
                   <img src={c4}  alt="Mango Pulp"/>
               </div>

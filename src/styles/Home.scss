@@ -16,6 +16,8 @@ $active-tab: #f4ac04;
   a {
     padding-left: 10px;
   }
+  align-self: center;
+  margin-top: 10px;
 }
 
 .carousel-container {
@@ -25,12 +27,12 @@ $active-tab: #f4ac04;
 //desktops
 @media only screen and (min-width: 900px) {
   .home {
-    height: 100%;
     display: flex;
     flex-flow: column;
+    padding: 20px;
   }
 
   .carousel-container {
-    width: 70%;
+    width: 50%;
   }
 }
