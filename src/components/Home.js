@@ -11,7 +11,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <div className="card">
+        <div>
           <picture>
             <source srcSet={require("../images/bg.jpeg")} media="(min-width: 1200px)"/>
             <source srcSet={require("../images/bg-500.jpeg")} media="(min-width: 800px)"/>
@@ -23,7 +23,7 @@ class Home extends React.Component {
           </div>
         </div>
         <article>
-          Siddhartha Agro is a dynamic and exponentially growing company primarily engaged in the manufacturing and export of processed food products and Agro commodities business. 
+          Siddharth Agro is a dynamic and exponentially growing company primarily engaged in the manufacturing and export of processed food products and Agro commodities business. 
           <Link to='/about'>Read more..</Link>
         </article>
       </div>

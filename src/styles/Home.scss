@@ -2,25 +2,25 @@ $nav-bg: #FAB94E;
 $nav-hover: #BD8F20;
 $active-tab: #f4ac04;
 
-.card {
-  display: flex;
-  flex: 0 0 100%;
-  flex-flow: column;
-  align-items: center;
+.home {
   div:first-of-type {
-    font-size: 24px;
-    color: $nav-bg;
+    display: flex;
+    flex: 0 0 100%;
+    flex-flow: column;
+    align-items: center;
+    div:first-of-type {
+      font-size: 24px;
+      color: $nav-bg;
+    } 
   }
 }
 
-article {
+.home article {
   flex: 0 0 100%;
-  margin-top: 15px;
   padding: 15px;
   background: #F7F7F7;
   border: 1px solid #D5D5D5;
   border-left: 0;
-  border-right: 0;
   a {
     padding-left: 10px;
   }
@@ -31,9 +31,8 @@ article {
 //desktops
 @media only screen and (min-width: 900px) {
   .home {
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-flow: row wrap;
-    align-content: space-evenly;
   }
 }

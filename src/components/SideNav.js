@@ -56,14 +56,12 @@ class Header extends React.Component {
         </div>
         <nav>
           <ul>
-            {/* <li className="selected"><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About us</Link></li>
-            <li><Link to='/products'>Products</Link></li>
-            <li><Link to='/infrastructure'>Infrastructure</Link></li>
-            <li><Link to='/contact'>Contact Us</Link></li> */}
             { tabs } 
           </ul>
         </nav>
+        <div className="copy-right">
+          <img src={require("../images/copyright.png")} alt=""/> <span> Siddarth Agro 2018</span>
+        </div>
       </div>
     )
     

@@ -6,7 +6,7 @@ import '../styles/App.scss';
 class App extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="container main-container">
         <SideNav />
         <Main />
       </div>

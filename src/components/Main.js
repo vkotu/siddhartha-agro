@@ -10,15 +10,19 @@ import Components from './common';
 const Main = () => (
   <div className="right-content">
     <div className="header">
-      <span>Welcome to Siddartha agro!</span>
+      <span>Welcome to Siddarth agro!</span>
+      <span>email: abc@gmail.com</span>
+      <span>Phone: +91 9999999999</span>
     </div>
-    <Switch>
-      <Route exact path='/' component={Components.Home}/>
-      <Route path='/about' component={Components.About}/>
-      <Route path='/infrastructure' component={Components.Infrastructure}/>
-      <Route path='/products' component={Components.Product}/>
-      <Route path='/contact' component={Components.Contact}/>
-    </Switch>
+    <div className="content">
+      <Switch>
+        <Route exact path='/' component={Components.Home}/>
+        <Route path='/about' component={Components.About}/>
+        <Route path='/infrastructure' component={Components.Infrastructure}/>
+        <Route path='/products' component={Components.Product}/>
+        <Route path='/contact' component={Components.Contact}/>
+      </Switch>
+    </div>
   </div>
 )
 

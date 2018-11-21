@@ -23,10 +23,34 @@ body {
   height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
   font-family: 'Niconne', cursive;
   font-weight: normal;
 }
+
+.p10 {
+  padding: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+
+.sub-heading {
+  color: purple;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+p {
+  @extend .p10;
+}
+
 
 #root {
   height: 100%;

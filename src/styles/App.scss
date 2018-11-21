@@ -18,11 +18,17 @@ $active-tab: #f4ac04;
 }
 
 .header {
-  text-align: center;
-  font-size: 32px;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
   font-family: 'Niconne', cursive;
   font-weight: normal;
+  justify-content: space-evenly;
   padding: 25px 0;
+  text-align: center;
+  span:first-of-type {
+    font-size: 32px;
+  }
 }
 
 .side-nav {
@@ -53,12 +59,19 @@ $active-tab: #f4ac04;
   }
 }
 
+.copy-right {
+  font-size: 10px;
+  text-align: center;
+  img {
+    height: 10px;
+  }
+}
 // Tablets &
 //desktops
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
   .logo {
     img {
-      height: inherit;
+      height: 114px;
     }
   }
   .main-container {
@@ -68,10 +81,18 @@ $active-tab: #f4ac04;
   
   .right-content {
     flex: 1 1 80%;
+    overflow: scroll;
   }
   
   .side-nav {
     flex: 1 1 20%;
     height: 100%;
+  }
+  .header {
+    flex-flow: row wrap;
+  }
+  .content {
+    height: 100%;
+    margin-top: 15px;
   }
 }
