@@ -40,6 +40,10 @@ h1 {
   padding-right: 10px;
 }
 
+.m10 {
+  margin: 10px;
+}
+
 
 .sub-heading {
   color: purple;
@@ -47,11 +51,11 @@ h1 {
   margin: 0;
 }
 
-p {
-  @extend .p10;
-}
-
 
 #root {
   height: 100%;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 2px rgba(38,40,42,.3);
 }

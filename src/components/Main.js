@@ -11,8 +11,8 @@ const Main = () => (
   <div className="right-content">
     <div className="header">
       <span>Welcome to Siddarth agro!</span>
-      <span>email: abc@gmail.com</span>
-      <span>Phone: +91 9999999999</span>
+      <span><span>email:</span> sagro1970@gmail.com</span>
+      <span><span>Phone:</span> +91-9866113691</span>
     </div>
     <div className="content">
       <Switch>
