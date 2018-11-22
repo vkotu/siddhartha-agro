@@ -3,16 +3,6 @@ $nav-hover: #BD8F20;
 $active-tab: #f4ac04;
 
 
-@media only screen and (max-width: 991px) {
-  .main-container {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  .right-content {
-    flex: 0 0 100%;
-  }
-
-}
 .logo {
   img {
     height: 200px;
@@ -77,6 +67,22 @@ $active-tab: #f4ac04;
 .right-content {
   background-color: #F7F7F7;
 }
+
+.content {
+  background-color: #F7F7F7;
+}
+
+@media only screen and (max-width: 991px) {
+  .main-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .right-content {
+    flex: 0 0 100%;
+  }
+
+}
+
 // Tablets &
 //desktops
 @media only screen and (min-width: 992px) {

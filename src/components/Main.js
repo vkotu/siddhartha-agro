@@ -21,6 +21,7 @@ const Main = () => (
         <Route path='/about' component={Components.About}/>
         <Route path='/infrastructure' component={Components.Infrastructure}/>
         <Route path='/products' component={Components.Product}/>
+        <Route path='/gallery' component={Components.Gallery}/>
         <Route path='/contact' component={Components.Contact}/>
       </Switch>
     </div>

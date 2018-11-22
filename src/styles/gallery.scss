@@ -1,0 +1,29 @@
+.gallery {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  li {
+    flex: 0 0 100%;
+    padding: 15px;
+  }
+  img { 
+    width: 100%; 
+  }
+  figure {
+    margin: 0;
+  }
+  // @media (min-width: 605px) {
+  //   li {
+  //     flex: 0 0 50%;
+  //   }
+  // }
+  @media (min-width: 910px) { 
+    li {
+      flex: 0 0 50%;
+    }
+  }
+}

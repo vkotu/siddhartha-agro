@@ -22,7 +22,8 @@ class Header extends React.Component {
       { id: 2, name: 'About us', link: 'about' },
       { id: 3, name: 'Products', link: 'products' },
       { id: 4, name: 'Infrastructure', link: 'infrastructure' },
-      { id: 5, name: 'Contact Us', link: 'contact' }
+      { id: 5, name: 'Gallery', link: 'gallery' },
+      { id: 6, name: 'Contact Us', link: 'contact' }
     ];
     this.state = {
       selectedTabId: 1
