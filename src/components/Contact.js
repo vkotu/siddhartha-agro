@@ -14,6 +14,7 @@ class Contact extends React.Component {
             <div>4-2040, VELLORE ROAD,</div>
             <div>GREAMSPET, CHITTOOR</div>
             <div>ANDHRA PRADESH</div>
+            <div>INDIA</div>
             <div>PHONE: +91-9866113691</div>
             <div>EMAIL: sagro1970@gmail.com</div>
           </div>
@@ -24,6 +25,7 @@ class Contact extends React.Component {
             <div>THAVANAMPALLI MANDAL,</div>
             <div>CHITTOOR DISTRICT,</div>
             <div>ANDHRA PRADESH</div>
+            <div>INDIA</div>
             <div>PHONE: +91-9866113691</div>
             <div>EMAIL: sagro1970@gmail.com</div>
           </div>
