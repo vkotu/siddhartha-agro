@@ -4,7 +4,12 @@ import ProductSpecs from './ProductSpecs';
 
 class Product extends React.Component {
 
+  componentDidMount() {
+    this.props.updateActiveState(this.props.match.params.productId);
+  }
+  
   componentDidUpdate(prevProps) {
+    console.log('hi');
     let currentId = this.props.match.params.productId;
     if(currentId !== prevProps.match.params.productId) {
       this.props.updateActiveState(currentId);

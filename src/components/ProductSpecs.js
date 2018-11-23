@@ -2,12 +2,12 @@ export default [
   {
     'id': 'mango',
     'name': 'Mango Pulp',
-    'description': `<p>Mangoes build up our immune system and prevent attacks of colds and sinusitis. Siddarth Agro offers finest mango pulp (Alphonso & Totapuri) from best quality mangoes that are carefully graded, sorted and are directly sourced from the farmers to a large percentage. Alphanso, with a warm sweet taste, is sometimes pleasantly tart. It is considered one of the tastiest fruits of India because of its rich aromatic flavour. Totapuri is a perfect blend of sweetness and acidity. Both Alphonso and Totapuri are excellent sources of Vitamin A & C.</p>
+    'description': `<p>Mangoes build up our immune system and prevent attacks of colds and sinusitis. Siddarth Agro offers finest mango pulp <strong>(Alphonso & Totapuri)</strong> from best quality mangoes that are carefully graded, sorted and are directly sourced from the farmers to a large percentage. Alphanso, with a warm sweet taste, is sometimes pleasantly tart. It is considered one of the tastiest fruits of India because of its rich aromatic flavour. Totapuri is a perfect blend of sweetness and acidity. Both Alphonso and Totapuri are excellent sources of Vitamin A & C.</p>
       <p>Selected and sound mangoes are collected and passed through various processing steps for the conversion into pulps. The preparation process includes washing, Inspection, cutting, de-stoning, pulping, refining, pre-heating, de-canting, standardizing and sterilizing, cooling. Our pulps are natural and do not contain any additives. The rich sweet taste, amazing colour and characteristic aroma of Alphonso are preserved. The mango pulp is free from all the impurities like pieces of mango stones, skin shreds, pesticide residue and black and brown particles.</p>
       <p>The ripe fruit is processed in the most technologically advanced and fully automated manufacturing set-up in Chittoor in excellent conditions by suitable means according to quality standards.</p>`,
     'specImg': 'MangoPulp_Specs.png',
     'packingStorage': `<p><span>Packing:</span> 215 Kgs packing in an aseptic bag with LDPE cover in a cleaned M.S drum. 80 drums per 20 ft. container.</p>
-      <p><span>Storage:</span> Stored at an ambient temperature preferably below 25o C. Higher temperature and sunlight should be avoided to enhance shelf life.</p>
+      <p><span>Storage:</span> Stored at an ambient temperature preferably below 25&deg; C. Higher temperature and sunlight should be avoided to enhance shelf life.</p>
       <p><span>Shelf Life:</span> 18 months from the date of production under above-mentioned Storage conditions.</p>`
   },
   {
@@ -18,7 +18,7 @@ export default [
     `,
     'specImg': 'PapayaPulp_Specs.png',
     'packingStorage': `<p><span>Packing:</span> 215 Kgs packing in an aseptic bag with LDPE cover in a cleaned M.S drum. 80 drums per 20 ft. container.</p>
-      <p><span>Storage:</span> Stored at an ambient temperature preferably below 25o C. Higher temperature and sunlight should be avoided to enhance shelf life.</p>
+      <p><span>Storage:</span> Stored at an ambient temperature preferably below 25&deg; C. Higher temperature and sunlight should be avoided to enhance shelf life.</p>
       <p><span>Shelf Life:</span> 18 months from the date of production under above-mentioned Storage conditions.</p>`
   },
   {
@@ -30,7 +30,7 @@ export default [
       <p/>We have a state-of-the-art packaging environment and infrastructure. This enables us to pack the pulp and preserve it at the same time to facilitate the supply for both bulk and urgent orders.</p>`,
     'specImg': 'GuavaPulp_Specs.png',
     'packingStorage': `<p><span>Packing:</span> 215 Kgs packing in an aseptic bag with LDPE cover in a cleaned M.S drum. 80 drums per 20 ft. container.</p>
-      <p><span>Storage:</span> Stored at an ambient temperature preferably below 25o C. Higher temperature and sunlight should be avoided to enhance shelf life.</p>
+      <p><span>Storage:</span> Stored at an ambient temperature preferably below 25&deg; C. Higher temperature and sunlight should be avoided to enhance shelf life.</p>
       <p><span>Shelf Life:</span> 18 months from the date of production under above-mentioned Storage conditions.</p>`
   }
 ];

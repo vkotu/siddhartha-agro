@@ -15,11 +15,12 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.aboutUsTabId = 2;
+    this.productsTabId = 3;
   }
 
-  setActiveTab() {
+  setActiveTab(id) {
     // this.setState({ selectedTabId });
-    this.props.updateState(this.aboutUsTabId);
+    this.props.updateState(id);
   }
 
   render() {
@@ -31,13 +32,16 @@ class Home extends React.Component {
                   <img className="c-img" src={c1} alt="Guava Pulp"/>
               </div>
               <div>
-                  <img className="c-img" src={c2}  alt="Payapa Pulp"/>
-              </div>
-              <div>
-                  <img className="c-img" src={c4}  alt="Mango Pulp"/>
-              </div>
-              <div>
                   <img className="c-img" src={c3}  alt="Mango Pulp"/>
+              </div>
+              {/* <div>
+                  <img className="c-img" src={c4}  alt="Mango Pulp"/>
+              </div> */}
+              <div>
+                  <img className="c-img" src={c7}  alt="Mango Pulp"/>
+              </div>
+              <div>
+                  <img className="c-img" src={c2}  alt="Payapa Pulp"/>
               </div>
               <div>
                   <img className="c-img" src={c5}  alt="Mango Pulp"/>
@@ -45,14 +49,43 @@ class Home extends React.Component {
               {/* <div>
                   <img className="c-img" src={c6}  alt="Mango Pulp"/>
               </div> */}
-              <div>
-                  <img className="c-img" src={c7}  alt="Mango Pulp"/>
-              </div>
           </Carousel>
         </div>
+        <div className="product-links">
+          <div>
+            Pulp / Puree / Juices
+          </div>
+          <div className="thumbnails" onClick={ () => this.setActiveTab(this.productsTabId) }>
+            <Link to="/products/mango">
+              <div>
+                <p>Mango Pulp</p>
+                <div>
+                  <img className="c-img" src={require("../images/mango.jpg")}  alt="Mango Pulp"/>
+                </div>
+              </div>
+            </Link>
+            <Link to="/products/papaya">
+              <div>
+                <p>Papaya Pulp</p>
+                <div>
+                  <img className="c-img" src={require("../images/papaya-1.jpg")}  alt="Papaya Pulp"/>
+                </div>
+              </div>
+            </Link>
+            <Link to="/products/guava">
+              <div>
+                <p>Guava Pulp</p>
+                <div>
+                  <img className="c-img" src={c5}  alt="Guava Pulp"/>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
         <article>
+          <p>Siddharth Agro</p>
           Siddharth Agro is a dynamic and exponentially growing company primarily engaged in the manufacturing and export of processed food products and Agro commodities business. 
-          <Link to='/about' onClick={this.setActiveTab.bind(this)}>Read more..</Link>
+          <Link to='/about' onClick={ () => this.setActiveTab(this.aboutUsTabId) }>Read more..</Link>
         </article>
       </div>
     )
