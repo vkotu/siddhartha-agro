@@ -58,11 +58,13 @@ class SideNav extends React.Component {
     });
     return (
       <div className="side-nav">
-        <div className="logo">
-          <picture>
-            <img src={require("../images/logo.png")} alt=""/>
-          </picture>
-        </div>
+        <Link to="/home">
+          <div className="logo">
+            <picture>
+              <img src={require("../images/logo.png")} alt=""/>
+            </picture>
+          </div>
+        </Link>
         <nav>
           <ul>
             { tabs } 

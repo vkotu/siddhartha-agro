@@ -16,7 +16,7 @@ class Contact extends React.Component {
             <div>ANDHRA PRADESH</div>
             <div>INDIA</div>
             <div>PHONE: +91-9866113691</div>
-            <div>EMAIL: sagro1970@gmail.com</div>
+            <div>EMAIL: <a href="mailto:sagro1970@gmail.com?Subject=Siddarth%20Agro" target="_blank" rel="noopener noreferrer">sagro1970@gmail.com</a></div>
           </div>
           <div className="card m10">
             <div>FACTORY</div>
@@ -27,7 +27,7 @@ class Contact extends React.Component {
             <div>ANDHRA PRADESH</div>
             <div>INDIA</div>
             <div>PHONE: +91-9866113691</div>
-            <div>EMAIL: sagro1970@gmail.com</div>
+            <div>EMAIL: <a href="mailto:sagro1970@gmail.com?Subject=Siddarth%20Agro" target="_blank" rel="noopener noreferrer">sagro1970@gmail.com</a></div>
           </div>
         </div>
       </div>

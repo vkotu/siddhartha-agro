@@ -23,8 +23,21 @@ $active-tab: #f4ac04;
     font-size: 32px;
   }
 
-  span > span {
-    color: red;
+  div > span {
+    span {
+      margin-right: 5px;
+    }
+    > span:nth-of-type(even){
+      margin-right: 10px;
+    }
+    > span:nth-of-type(odd){
+      color: red;
+    }
+  }
+
+  img {
+    height: 25px;
+    width: 30px;
   }
 }
 
@@ -121,6 +134,11 @@ $active-tab: #f4ac04;
   .header {
     display: flex;
     flex-flow: row wrap;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .content {
     margin-top: 113px;
