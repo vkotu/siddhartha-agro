@@ -14,7 +14,12 @@ import c7 from '../images/c7.jpg';
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.aboutUsTabId = 2;
+  }
+
+  setActiveTab() {
+    // this.setState({ selectedTabId });
+    this.props.updateState(this.aboutUsTabId);
   }
 
   render() {
@@ -47,7 +52,7 @@ class Home extends React.Component {
         </div>
         <article>
           Siddharth Agro is a dynamic and exponentially growing company primarily engaged in the manufacturing and export of processed food products and Agro commodities business. 
-          <Link to='/about'>Read more..</Link>
+          <Link to='/about' onClick={this.setActiveTab.bind(this)}>Read more..</Link>
         </article>
       </div>
     )

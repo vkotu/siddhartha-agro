@@ -14,28 +14,36 @@ function Tab (props) {
   )
 }
 
-class Header extends React.Component {
+class SideNav extends React.Component {
   constructor(props) {
     super(props);
     this.navItems = [
       { id: 1, name: 'Home', link: '' },
       { id: 2, name: 'About us', link: 'about' },
-      { id: 3, name: 'Products', link: 'products' },
+      { id: 3, name: 'Products', link: 'products/mango' },
       { id: 4, name: 'Infrastructure', link: 'infrastructure' },
       { id: 5, name: 'Gallery', link: 'gallery' },
       { id: 6, name: 'Contact Us', link: 'contact' }
     ];
     this.state = {
-      selectedTabId: 1
+      selectedTabId: props.selectedTabId
     }
   }
 
+  componentDidUpdate(prevProps) {
+    if(this.props.selectedTabId !== prevProps.selectedTabId) {
+      this.setState({
+        selectedTabId: this.props.selectedTabId
+      });
+    }
+  }
+  
   isActive (id) {
     return this.state.selectedTabId === id;
   }
 
   setActiveTab(selectedTabId) {
-    this.setState({ selectedTabId });
+    this.props.updateState(selectedTabId);
   }
 
   render() {
@@ -69,4 +77,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default SideNav
