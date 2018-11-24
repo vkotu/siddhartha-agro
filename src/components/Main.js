@@ -10,8 +10,9 @@ import { Link } from 'react-router-dom'
 // and /schedule routes will match any pathname that starts
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
-const Main = (props) => (
-  <div className="right-content">
+const Main = (props) => {
+  const contextProps = props;
+  return (<div className="right-content">
     <div className="top-header">
       <div className="header">
         <span>Welcome to Siddarth agro!</span>
@@ -28,15 +29,15 @@ const Main = (props) => (
       </div>
     </div>
     <div className="content">
-      <Route exact path='/' render={() => <Components.Home selectedTabId={props.selectedTabId} updateState={props.updateState}/>}/>
+      <Route exact path='/' render={() => <Components.Home selectedTabId={contextProps.selectedTabId} updateMainNavId={contextProps.updateMainNavId}/>}/>
       <Route path='/about' component={Components.About}/>
       <Route path='/infrastructure' component={Components.Infrastructure}/>
-      <Route path='/products' component={Components.Products}/>
+      <Route path='/products' render={(props) => <Components.Products updateMainNavId={contextProps.updateMainNavId} {...props}/>}/>
       {/* <Route path='/products' component={Topics}/> */}
       <Route path='/gallery' component={Components.Gallery}/>
       <Route path='/contact' component={Components.Contact}/>
     </div>
-  </div>
-)
+  </div>)
+}
 
 export default Main

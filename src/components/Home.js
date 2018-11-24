@@ -19,8 +19,7 @@ class Home extends React.Component {
   }
 
   setActiveTab(id) {
-    // this.setState({ selectedTabId });
-    this.props.updateState(id);
+    this.props.updateMainNavId(id);
   }
 
   render() {

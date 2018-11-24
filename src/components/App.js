@@ -10,16 +10,17 @@ class App extends Component {
       selectedTabId: 1
     }
   }
-  updateState(selectedTabId) {
+  updateNavigationState(selectedTabId) {
     this.setState({
       selectedTabId: selectedTabId
     });
   }
+
   render() {
     return (
       <div className="main-container">
-        <SideNav selectedTabId={this.state.selectedTabId} updateState={ (id) => this.updateState(id)}/>
-        <Main selectedTabId={this.state.selectedTabId}  updateState={(id) => this.updateState(id)}/>
+        <SideNav selectedTabId={this.state.selectedTabId} updateMainNavId={ (id) => this.updateNavigationState(id)}/>
+        <Main selectedTabId={this.state.selectedTabId}  updateMainNavId={(id) => this.updateNavigationState(id)}/>
       </div>
     );
   }

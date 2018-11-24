@@ -17,6 +17,11 @@ class Products extends React.Component {
       activeTab: id
     });
   }
+
+  componentDidMount () {
+    this.props.updateMainNavId(3);//products id
+  }
+
   render() {
     const {match} = this.props;
     const products = ProductSpecs.map((item, i) => {

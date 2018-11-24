@@ -43,7 +43,7 @@ class SideNav extends React.Component {
   }
 
   setActiveTab(selectedTabId) {
-    this.props.updateState(selectedTabId);
+    this.props.updateMainNavId(selectedTabId);
   }
 
   render() {
