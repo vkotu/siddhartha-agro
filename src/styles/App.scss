@@ -23,21 +23,22 @@ $active-tab: #f4ac04;
     font-size: 32px;
   }
 
-  div > span {
-    span {
-      margin-right: 5px;
+  div {
+    > span {
+      span {
+        margin-right: 5px;
+      }
     }
-    > span:nth-of-type(even){
-      margin-right: 10px;
+    > div {
+      a {
+        padding-right: 5px;
+      }
     }
-    > span:nth-of-type(odd){
-      color: red;
-    }
-  }
+}
 
   img {
-    height: 25px;
-    width: 30px;
+    height: 20px;
+    width: 25px;
   }
 }
 
@@ -134,8 +135,9 @@ $active-tab: #f4ac04;
   .header {
     display: flex;
     flex-flow: row wrap;
-    div {
+    > div {
       display: flex;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
     }

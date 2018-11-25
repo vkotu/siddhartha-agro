@@ -2,8 +2,9 @@ import React from 'react';
 import '../styles/App.scss';
 import '../styles/product.scss';
 import ProductSpecs from './ProductSpecs';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Product from './Product';
+import SubNav from './SubNav';
 
 class Products extends React.Component {
   constructor(props) {
@@ -24,16 +25,9 @@ class Products extends React.Component {
 
   render() {
     const {match} = this.props;
-    const products = ProductSpecs.map((item, i) => {
-      return <li key={i} className={item.id === this.state.activeTab ? 'active' : ''}>
-        <Link to={`${match.url}/${item.id}`}>{item.name}</Link>
-      </li>;
-    });
     return (
       <div>
-        <ul className="sub-nav">
-          {products}
-        </ul>
+        <SubNav activeTabId={this.state.activeTab} url={match.url} menuItems={ProductSpecs}/>
         <Route path={`${match.path}/:productId`} render={
           (props) => { 
             return (<Product updateActiveState={this.updateActiveState.bind(this)} {...props} />) ;

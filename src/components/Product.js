@@ -9,7 +9,6 @@ class Product extends React.Component {
   }
   
   componentDidUpdate(prevProps) {
-    console.log('hi');
     let currentId = this.props.match.params.productId;
     if(currentId !== prevProps.match.params.productId) {
       this.props.updateActiveState(currentId);

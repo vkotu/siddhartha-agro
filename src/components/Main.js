@@ -17,14 +17,22 @@ const Main = (props) => {
       <div className="header">
         <span>Welcome to Siddarth agro!</span>
         <div>
-          <Link to="/" onClick={() => props.updateState(1) }>
-            <img src={require("../images/home.jpeg")} alt="Home"/>
-          </Link>
           <span>
-            <span>Email:</span>
+            <span><img src={require("../images/email.png")} alt="Home"/></span>
             <span><a href="mailto:sagro1970@gmail.com?Subject=Siddarth%20Agro" target="_blank" rel="noopener noreferrer">sagro1970@gmail.com</a></span>
-            <span>Phone:</span><span>+91-9866113691</span>
+            <span> <img src={require("../images/phone.png")} alt="Home"/></span><span>+91-9866113691</span>
           </span>
+          <div>
+            <Link to="/" onClick={() => contextProps.updateMainNavId(1)}>
+              <img src={require("../images/home.jpeg")} alt="Home"/>
+            </Link>
+            <a href="http://facebook.com/siddarth-agro" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/fb-logo.png")} alt="fb"/>
+            </a>
+            <a href="https://twitter.com/siddarth-agro" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/twitter-logo.png")} alt="twitter"/>
+            </a>
+          </div>
         </div>
       </div>
     </div>
