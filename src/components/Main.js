@@ -17,11 +17,15 @@ const Main = (props) => {
       <div className="header">
         <span>Welcome to Siddarth agro!</span>
         <div>
-          <span>
-            <span><img src={require("../images/email.png")} alt="Home"/></span>
-            <span><a href="mailto:sagro1970@gmail.com?Subject=Siddarth%20Agro" target="_blank" rel="noopener noreferrer">sagro1970@gmail.com</a></span>
-            <span> <img src={require("../images/phone.png")} alt="Home"/></span><span>+91-9866113691</span>
-          </span>
+          <div>
+            <p>
+              <span><img src={require("../images/email.png")} alt="Home"/></span>
+              <span><a href="mailto:sagro1970@gmail.com?Subject=Siddarth%20Agro" target="_blank" rel="noopener noreferrer">sagro1970@gmail.com</a></span>
+            </p>
+            <p>
+              <span> <img src={require("../images/phone.png")} alt="Home"/></span><span>+91-9866113691</span>
+            </p>
+          </div>
           <div>
             <Link to="/" onClick={() => contextProps.updateMainNavId(1)}>
               <img src={require("../images/home.jpeg")} alt="Home"/>

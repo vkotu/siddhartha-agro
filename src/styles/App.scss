@@ -24,12 +24,19 @@ $active-tab: #f4ac04;
   }
 
   div {
-    > span {
+    
+    > p {
+      margin-bottom: 0.5em;
       span {
         margin-right: 5px;
       }
     }
+
     > div {
+      &:first-child {
+        display: flex;
+        flex-flow: column;
+      }
       a {
         padding-right: 5px;
       }
@@ -140,6 +147,11 @@ $active-tab: #f4ac04;
       flex-flow: column;
       justify-content: center;
       align-items: center;
+
+      > div:first-child {
+        display: flex;
+        flex-flow: row;
+      }
     }
   }
   .content {
