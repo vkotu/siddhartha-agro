@@ -43,7 +43,7 @@ const Main = (props) => {
     <div className="content">
       <Route exact path='/' render={() => <Components.Home selectedTabId={contextProps.selectedTabId} updateMainNavId={contextProps.updateMainNavId}/>}/>
       <Route path='/about' component={Components.About}/>
-      <Route path='/infrastructure' component={Components.Infrastructure}/>
+      <Route path='/infrastructure' render={(props) => <Components.Infrastructure updateMainNavId={contextProps.updateMainNavId} {...props}/>}/>
       <Route path='/products' render={(props) => <Components.Products updateMainNavId={contextProps.updateMainNavId} {...props}/>}/>
       {/* <Route path='/products' component={Topics}/> */}
       <Route path='/gallery' component={Components.Gallery}/>

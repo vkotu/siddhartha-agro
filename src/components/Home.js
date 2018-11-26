@@ -52,7 +52,7 @@ class Home extends React.Component {
         </div>
         <div className="product-links">
           <div>
-            Pulp / Puree / Juices
+            Pulp / Puree
           </div>
           <div className="thumbnails" onClick={ () => this.setActiveTab(this.productsTabId) }>
             <Link to="/products/mango">
@@ -82,9 +82,8 @@ class Home extends React.Component {
           </div>
         </div>
         <article>
-          <p>Siddharth Agro</p>
-          Siddharth Agro is a dynamic and exponentially growing company primarily engaged in the manufacturing and export of processed food products and Agro commodities business. 
-          <Link to='/about' onClick={ () => this.setActiveTab(this.aboutUsTabId) }>Read more..</Link>
+          <p><strong>Siddarth Agro</strong> is a dynamic and exponentially growing company primarily engaged in the manufacturing and export of processed food products and Agro commodities business. Siddarth Agro is poised to cater to the world market with the best of nature’s nutritious fruit puree. The company aims to be a leading reliable supplier of processed food products from India.</p>
+          <p>The management team possesses over three decades of expertise and deep knowledge in mango cultivation, procurement and pulp processing and has been instrumental in mobilizing the right technology and human assets for the strategic development of the company. Siddarth Agro is located in Chittoor, the heart of the mango belt of India. <Link to='/about' onClick={ () => this.setActiveTab(this.aboutUsTabId) }>Read more..</Link></p>
         </article>
       </div>
     )

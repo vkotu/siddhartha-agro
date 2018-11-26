@@ -5,6 +5,8 @@ import Contact from './Contact';
 import Products from './Products';
 import Product from './Product';
 import Gallery from './Gallery';
+import Facility from './Facility';
+import Certification from './Certification';
 
 export default {
   Home,
@@ -13,5 +15,7 @@ export default {
   Contact,
   Products,
   Product,
-  Gallery
+  Gallery,
+  Facility,
+  Certification
 }

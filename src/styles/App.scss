@@ -158,3 +158,31 @@ $active-tab: #f4ac04;
     margin-top: 113px;
   }
 }
+
+.sub-nav {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #8fbc8f;
+
+  li {
+    padding: 5px 5px 0px 5px;
+    margin-right: 10px;
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &.active {
+      border-bottom: 1px solid #006400;
+    }
+    
+    &:hover {
+      background-color: #b0d0b0;
+    }
+  }
+
+}

@@ -21,7 +21,7 @@ class SideNav extends React.Component {
       { id: 1, name: 'Home', link: '' },
       { id: 2, name: 'About us', link: 'about' },
       { id: 3, name: 'Products', link: 'products/mango' },
-      { id: 4, name: 'Infrastructure', link: 'infrastructure' },
+      { id: 4, name: 'Infrastructure', link: 'infrastructure/facility' },
       { id: 5, name: 'Gallery', link: 'gallery' },
       { id: 6, name: 'Contact Us', link: 'contact' }
     ];
