@@ -23,7 +23,7 @@ const Main = (props) => {
               <span><a href="mailto:sagro1970@gmail.com?Subject=Siddarth%20Agro" target="_blank" rel="noopener noreferrer">sagro1970@gmail.com</a></span>
             </p>
             <p>
-              <span> <img src={require("../images/phone.png")} alt="Home"/></span><span>+91-9866113691</span>
+              <span> <img src={require("../images/phone.png")} alt="Home"/></span><span className="ph-num">+91-9866113691</span>
             </p>
           </div>
           <div>
